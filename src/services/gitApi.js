@@ -1,4 +1,7 @@
 //get user
+const getUser = (username) => {
+  fetch;
+};
 
 //getrepos
 
