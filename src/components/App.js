@@ -7,5 +7,8 @@ import {
 import Homepage from '../components/homepage/Homepage';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <Homepage />
+  );
+  
 }

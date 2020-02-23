@@ -1,2 +1,2 @@
-export const areUsersLoading = state => state.users.loading;
-export const selectUsers = state => state.users.users;
+export const isUserLoading = state => state.user.loading;
+export const selectUser = state => state.user.user;
