@@ -1,6 +1,6 @@
 import { FETCH_USER_LOADING, fetchUser, FETCH_USER } from './userActions';
 
-jest.mock('../../services/gitAPI.js');
+jest.mock('/Users/sarahmayfield/alchemy/career-track/09-week/github-viewer/src/services/gitApi.js');
 
 describe('user actions', () => {
   const dispatch = jest.fn();
