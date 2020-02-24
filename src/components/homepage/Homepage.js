@@ -1,30 +1,14 @@
-    
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { fetchUser } from '../../actions/userActions';
-import { fetchRepo } from '../../actions/repoActions';
-import User from '../user/User';
-import Repos from '../repos/Repos';
 
-export default function Form(){
-  const [query, setQuery] = useState('');
-  const dispatch = useDispatch();
+import React from 'react';
+import Form from '../form/Form';
+// import RepoList from '../repos/Repos';
+// import User from '../user/User';
 
-  const getUser = event => {
-    event.preventDefault();
-    dispatch(fetchUser(query));
-    dispatch(fetchRepo(query));
-  };
 
+export default function Homepage(){
   return (
     <>
-      <h1> Find a GitHub User </h1>
-      <form onSubmit={getUser}>
-        <input type='text' placeholder='Github Username' onChange={({ target }) => setQuery(target.value)} />
-        <button>Search</button>
-      </form>
-      <User />
-      <Repos />
+      <Form />
     </>
   );
 }
